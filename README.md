@@ -1,3 +1,83 @@
+   # LOBSTER-MINI
+Open-source Embodied Automation AI Agent Based on Harness Scheduling Architecture
+## Project Introduction
+LOBSTER-MINI is natively built on the complete Harness agent scheduling architecture, filling the gap of physical graphical execution layer missing in traditional text-only API agents.
+
+It adopts a three-tier architecture plus a three-in-one execution suite: upper Harness scheduling core, middle Node control service, bottom Docker isolated sandbox cluster. Each sandbox integrates three core modules: Docker isolated environment, open-computer-use desktop control engine, Web VNC real-time visualization.
+
+The system empowers AI with full desktop operation capabilities including screen visual recognition, OCR text parsing, mouse & keyboard simulation, multi-window interaction. It realizes the technical upgrade from interface-only text agents to embodied agents that can manipulate real graphical interfaces.
+
+## System Layered Architecture (Match Architecture Diagram)
+### Tier 1: Harness Global Scheduling Layer
+- Central task entrypoint, receiving automation tasks from business systems and LLMs; manage task queue, priority and concurrency limits
+- Natively compatible with original Harness business workflow, no large-scale refactoring for upper-layer business code
+- Distribute operation commands down to LOBSTER-MINI Node service, collect sandbox feedback including operation logs, screenshots and error reports
+- Full lifecycle control: task dispatch, pause, retry, snapshot rollback, task termination
+
+### Tier 2: LOBSTER-MINI Node Middle Control Service
+Developed with Node.js, acts as exclusive communication bridge between scheduler and container sandboxes
+1. Container Cluster Management: Create, start/stop, snapshot/reset, destroy sandbox instances in batches via Docker Compose
+2. Command Forwarding: Standard encapsulation for open-computer-use API, send screenshot, mouse and keyboard execution instructions
+3. VNC Gateway: Unified port mapping and authentication for all sandbox VNC services, provide browser-accessible real-time view links
+4. Persistent Data Storage: Cache and store full operation logs, screenshots, AI action vectors; upload data to upper scheduler for anomaly troubleshooting
+
+### Tier 3: Docker Isolated Sandbox Execution Cluster
+One independent container per task, multiple containers form a scalable sandbox cluster. Each sandbox contains two built-in core components:
+#### ① open-computer-use Desktop Control Engine (Action Execution Core)
+- Vision capabilities: Full/partial screen capture, OCR text recognition, precise window coordinate locating
+- Input simulation: Mouse click/drag/scroll, keyboard text input, system shortcut simulation
+- Real-time data upload: Send captured screen frames and execution results to middle Node service for storage
+
+#### ② Web VNC Visualization Service (Human-Machine Collaboration Channel)
+- Client-free access: Directly view full sandbox desktop in browser with real-time operation stream
+- Manual intervention support: Take over mouse/keyboard at any time to pause AI automation and fix wrong operations
+- Complete operation record: Persist all screen streams to reproduce recognition errors and abnormal action vectors
+
+### Full Data Flow
+Business/LLM Task Request → Harness Scheduler Dispatch Task → Node Service Create/Reuse Docker Sandbox → Send Commands to open-computer-use for Desktop Execution
+Parallel stream: Desktop video stream pushed to Web VNC for manual monitoring; screenshots, logs and recognition results upload back to Harness for unified storage.
+
+## Core Features
+1. Secure Isolation via Independent Docker Sandboxes
+Each task runs in separated container with configurable CPU/memory resource limits and permission whitelist. One-click snapshot reset for sandbox environment. All tasks are fully isolated without polluting host machine or interfering each other.
+
+2. Full-Scale Graphical Interface Automation
+Powered by open-computer-use engine, supports screen capture, global/local OCR, all mouse actions, batch text input and multi-window scheduling, covering all web pages and PC client scenarios.
+
+3. Web VNC Visualized Human-Machine Collaboration Architecture
+Lightweight VNC stream service built in each container, unified port forwarding and authentication by middle service. Real-time AI operation view via browser; instant manual correction supported. Full operation logs and screen records for fast anomaly location.
+
+4. Native Compatibility with Harness Scheduling Link
+Fully reuse existing Harness task queue and management logic. Only add LOBSTER-MINI middle control service to connect bottom sandbox execution cluster. No heavy reconstruction required for original text agents to expand desktop automation ability with low cost.
+
+## Application Scenarios
+- Intelligent Office Automation: Batch form filling, backend data crawling, multi-page data collection
+- UI Automated Testing: Flow inspection and repetitive operation verification for web & desktop clients
+- Embodied AI Research: Screen-interaction LLM training, human-machine collaboration automation validation
+- Unattended batch desktop tasks with visualized real-time maintenance and manual correction support
+
+## Layered Tech Stack
+1. Upper Scheduler: Harness Agent Scheduling Framework
+2. Middle Gateway: Node.js
+3. Container Orchestration: Docker Compose
+4. Desktop Execution Core: open-computer-use
+5. Real-Time Visualization: Web VNC
+
+## Architecture Diagram Annotation Guide
+1. Top Module: Harness Task Scheduler
+2. Middle Core Module: LOBSTER-MINI Node Service
+3. Bottom Cluster: Docker Sandbox Group
+    Sub-components inside single sandbox: open-computer-use Desktop Engine, Web VNC Visual Desktop
+4. Bidirectional Data Arrow: Down = Scheduling Execution Commands; Up = Logs, Screenshots & Status Feedback
+
+## Open Source License
+MIT License
+
+---
+## Supplementary Instructions
+1. Copy all Markdown content to README.md in your repository. Submit the file and refresh repo homepage to display full architecture, features and scenarios.
+2. Upload system layered architecture diagram to repo and insert image links in document for intuitive structure display.
+3. Unified standard technical terms, friendly to both beginner developers and business users.
 # LOBSTER-MINI 龙虾迷你版
 基于Harness调度架构的开源具身自动化AI智能体
 
