@@ -1,0 +1,11 @@
+﻿{
+  "style": "glassmorphism",
+  "style_guidelines": {
+    "color_palette": "Vibrant purple-to-cyan gradient background (#667eea→#00d4ff), frosted glass panels with 15-20% white opacity, electric accents",
+    "typography": "SF Pro Display style, bold 700 weight white titles with subtle text-shadow, clean 400 weight body text",
+    "imagery": "Abstract 3D glass spheres, floating translucent geometric shapes, soft luminous orbs, depth through layered transparency",
+    "layout": "Centered frosted glass cards with 32px rounded corners, 48-64px padding, floating above gradient",
+    "effects": "Backdrop blur 20-40px on glass panels, subtle white border glow, soft colored shadows matching gradient"
+  },
+  "aspect_ratio": "16:9"
+}

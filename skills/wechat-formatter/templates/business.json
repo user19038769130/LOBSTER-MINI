@@ -1,0 +1,7 @@
+﻿{
+  "name": "可爱风",
+  "description": "活泼可爱，粉色系，圆角边框",
+  "colors": "背景 #fff5f5，标题 #ff6b81，正文 #666666，强调色 #ffb3b3",
+  "fonts": "标题用圆体或 Comic Sans 风格，正文用系统字体，字号 16px",
+  "decorations": "添加 emoji 装饰（✨🎀🍰），卡片式段落背景，圆角 div 边框"
+}

@@ -1,0 +1,11 @@
+﻿{
+  "style": "gradient-modern",
+  "style_guidelines": {
+    "color_palette": "Bold mesh gradients, purple-pink-orange (#7c3aed→#ec4899→#f97316), white or dark text depending on background",
+    "typography": "Modern geometric sans-serif, variable font weights, oversized bold headlines (80pt+), comfortable body text (20pt)",
+    "imagery": "Abstract fluid shapes, morphing gradients, 3D rendered abstract objects, soft organic forms",
+    "layout": "Dynamic asymmetric compositions, overlapping elements with blend modes, text integrated with gradient flows",
+    "effects": "Smooth gradient transitions, subtle noise texture (3-5%), soft shadows with color tint matching gradient"
+  },
+  "aspect_ratio": "16:9"
+}

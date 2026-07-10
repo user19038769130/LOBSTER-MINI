@@ -1,0 +1,11 @@
+﻿{
+  "style": "dark-premium",
+  "style_guidelines": {
+    "color_palette": "Deep black base (#0a0a0a), luminous accent colors (electric blue #00d4ff, neon purple #bf5af2), subtle gray gradients",
+    "typography": "Elegant sans-serif, dramatic size contrast (72pt+ headlines, 18pt body), pure white text",
+    "imagery": "Dramatic studio lighting, rim lights and edge glow, cinematic product shots, abstract light trails",
+    "layout": "Generous negative space (60%+), asymmetric balance, single focal point per slide",
+    "effects": "Subtle ambient glow, light bloom effects, grain texture overlay (2-3% opacity), vignette on edges"
+  },
+  "aspect_ratio": "16:9"
+}

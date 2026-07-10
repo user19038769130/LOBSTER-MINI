@@ -1,0 +1,11 @@
+﻿{
+  "style": "3d-isometric",
+  "style_guidelines": {
+    "color_palette": "Soft contemporary palette: muted purples (#8b5cf6), teals (#14b8a6), warm corals (#fb7185), cream backgrounds (#fafafa)",
+    "typography": "Friendly geometric sans-serif (Circular, Gilroy style), medium weight headlines, comfortable 24pt body text",
+    "imagery": "Clean isometric 3D illustrations, consistent 30° isometric angle, soft clay-render aesthetic, floating platforms and devices",
+    "layout": "Central isometric scene as hero, text balanced around 3D elements, clear visual hierarchy, comfortable margins (64px+)",
+    "effects": "Soft drop shadows (20px blur, 30% opacity), ambient occlusion on 3D objects, subtle gradients on surfaces"
+  },
+  "aspect_ratio": "16:9"
+}

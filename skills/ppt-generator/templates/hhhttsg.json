@@ -1,0 +1,11 @@
+﻿{
+  "style": "keynote",
+  "style_guidelines": {
+    "color_palette": "Deep blacks (#000000 to #1d1d1f), pure white text, signature blue (#0071e3) or gradient accents",
+    "typography": "San Francisco Pro Display, extreme weight contrast (bold 80pt+ titles, light 24pt body), negative letter-spacing (-0.03em)",
+    "imagery": "Cinematic photography, shallow depth of field, dramatic lighting, product hero shots with reflections",
+    "layout": "Maximum negative space, single powerful image or statement per slide, content centered or dramatically offset",
+    "effects": "Subtle gradient overlays, light bloom and glow on key elements, reflection on surfaces"
+  },
+  "aspect_ratio": "16:9"
+}

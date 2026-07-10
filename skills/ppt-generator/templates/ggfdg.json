@@ -1,0 +1,11 @@
+﻿{
+  "style": "editorial",
+  "style_guidelines": {
+    "color_palette": "Sophisticated neutrals: off-white (#f5f5f0), charcoal (#2d2d2d), single accent color (burgundy #7c2d12, forest #14532d, navy #1e3a5f)",
+    "typography": "Refined serif for headlines (Playfair Display style), clean sans-serif body (Söhne style), dramatic size hierarchy (96pt/16pt), generous line-height 1.6",
+    "imagery": "Magazine-quality photography, dramatic crops, full-bleed images, editorial lighting (Vogue, Bloomberg style)",
+    "layout": "Sophisticated grid system (12-column), intentional asymmetry, pull quotes as design elements, text wrapping around images",
+    "effects": "Minimal effects - let photography and typography shine, subtle image treatments (slight desaturation, film grain)"
+  },
+  "aspect_ratio": "16:9"
+}

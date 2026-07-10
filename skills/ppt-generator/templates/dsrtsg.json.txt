@@ -1,0 +1,11 @@
+﻿{
+  "style": "minimal-swiss",
+  "style_guidelines": {
+    "color_palette": "Pure white (#ffffff) backgrounds, true black (#000000) text, single bold accent (Swiss red #ff0000 or blue #002fa7)",
+    "typography": "Helvetica Neue style, strict type scale (12/16/24/48/96), medium weight body, bold for emphasis only",
+    "imagery": "Objective photography, geometric shapes, clean iconography, mathematical precision, empty space as compositional element",
+    "layout": "Strict grid adherence, modular compositions, generous whitespace (40%+ of slide), content aligned to invisible grid",
+    "effects": "None - purity of form, no shadows, no gradients, occasional single hairline rules"
+  },
+  "aspect_ratio": "16:9"
+}
